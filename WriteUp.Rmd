@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning Write Up"
-author: "Gabriel Mohanna"
+author: "Gredy Garrido"
 output: html_document
 ---
 
@@ -44,8 +44,8 @@ library(corrplot)
 
 ```{r Read-Clean-Data, tidy=TRUE}
 # Read and Clean Data
-data       <- read.csv("Data/pml-training.csv", na.string=c("NA", ""))
-data.valid <- read.csv("Data/pml-testing.csv" , na.string=c("NA", ""))
+data       <- read.csv("~/GitHub/MachineLearning/Data/pml-testing.csv", na.string=c("NA", ""))
+data.valid <- read.csv("~/GitHub/MachineLearning/Data/pml-training.csv", na.string=c("NA", ""))
 
 # Determine Data's NA Columns
 table(round(apply(data, 2, function(x) sum(is.na(x)))/nrow(data), 2))
