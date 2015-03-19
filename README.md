@@ -1,5 +1,5 @@
 # Machine Learning Write Up
-Gabriel Mohanna  
+Gredy Garrido 
 
 
 # Executive Summary
